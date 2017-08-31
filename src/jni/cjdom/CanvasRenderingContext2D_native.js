@@ -55,7 +55,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setLineWidthEDEV)
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setGlobalAlphaEDEV)(a0,a1,a2,p)
 {
     var rc = a0._jso0;
-    rc.setGlobalAlpha(a1);
+    rc.globalAlpha = a1;
 }
 
 //
