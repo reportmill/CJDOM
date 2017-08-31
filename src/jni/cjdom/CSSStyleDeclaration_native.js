@@ -3,7 +3,7 @@
 //
 // setProperty(name,value)
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj19CSSStyleDeclaration11setPropertyEN4java4lang6StringN4java4lang6StringN4java4lang6StringEV)(a0,a1,a2,a3,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom19CSSStyleDeclaration11setPropertyEN4java4lang6StringN4java4lang6StringN4java4lang6StringEV)(a0,a1,a2,a3,p)
 {
     var style = a0._jso0;
     var name = toJS_String(a1);
@@ -14,7 +14,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj19CSSStyleDeclaration11setPropertyEN4java4l
 //
 // setCSSText(str)
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj19CSSStyleDeclaration10setCSSTextEN4java4lang6StringEV)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom19CSSStyleDeclaration10setCSSTextEN4java4lang6StringEV)(a0,a1,p)
 {
     var style = a0._jso0;
     var str = toJS_String(a1);

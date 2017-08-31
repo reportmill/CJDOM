@@ -3,7 +3,7 @@
 //
 // addColorStop(offset,color)
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj14CanvasGradient12addColorStopEDN4java4lang6StringEV)(a0,a1,a2,a3,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom14CanvasGradient12addColorStopEDN4java4lang6StringEV)(a0,a1,a2,a3,p)
 {
     var cg = a0._jso0;
     var color = toJS_String(a3);

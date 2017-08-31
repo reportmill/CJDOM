@@ -3,7 +3,7 @@
 //
 // Returns the width HTML attribute of the <canvas> element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement8getWidthEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8getWidthEVEI)(a0,p)
 {
     var canvas = a0._jso0;
     return canvas.width;
@@ -12,7 +12,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement8getWidthEVEI)(a0,p)
 //
 // Sets the width HTML attribute of the <canvas> element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement8setWidthEIEV)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8setWidthEIEV)(a0,a1,p)
 {
     var canvas = a0._jso0;
     canvas.width = a1;
@@ -21,7 +21,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement8setWidthEIEV)(a0,a1,p)
 //
 // Returns the height HTML attribute of the <canvas> element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement9getHeightEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9getHeightEVEI)(a0,p)
 {
     var canvas = a0._jso0;
     return canvas.height;
@@ -30,7 +30,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement9getHeightEVEI)(a0,p)
 //
 // Sets the height HTML attribute of the <canvas> element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement9setHeightEIEV)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9setHeightEIEV)(a0,a1,p)
 {
     var canvas = a0._jso0;
     canvas.height = a1;
@@ -39,7 +39,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement9setHeightEIEV)(a0,a1,p)
 //
 // Returns a drawing context on the canvas.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj17HTMLCanvasElement13getContextJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement13getContextJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
 {
     var canvas = a0._jso0;
     var name = toJS_String(a1);

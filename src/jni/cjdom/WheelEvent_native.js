@@ -3,7 +3,7 @@
 //
 // getDeltaX()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaXEVED)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaXEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaX;
@@ -12,7 +12,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaXEVED)(a0,p)
 //
 // getDeltaY()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaYEVED)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaYEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaY;
@@ -21,7 +21,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaYEVED)(a0,p)
 //
 // getDeltaZ()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaZEVED)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaZEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaZ;
@@ -30,7 +30,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent9getDeltaZEVED)(a0,p)
 //
 // getDeltaMode()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10WheelEvent12getDeltaModeEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent12getDeltaModeEVEI)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaMode;

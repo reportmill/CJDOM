@@ -2,7 +2,7 @@
 //
 // getWidth()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj16HTMLImageElement8getWidthEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom16HTMLImageElement8getWidthEVEI)(a0,p)
 {
     var img = a0._jso0;
     return img.width;
@@ -11,7 +11,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj16HTMLImageElement8getWidthEVEI)(a0,p)
 //
 // getHeight()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj16HTMLImageElement9getHeightEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom16HTMLImageElement9getHeightEVEI)(a0,p)
 {
     var img = a0._jso0;
     return img.height;

@@ -2,7 +2,7 @@
 //
 // getClientX()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10getClientXEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent10getClientXEVEI)(a0,p)
 {
     var me = a0._jso0;
     return me.clientX;
@@ -11,7 +11,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10getClientXEVEI)(a0,p)
 //
 // getClientY()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10getClientYEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent10getClientYEVEI)(a0,p)
 {
     var me = a0._jso0;
     return me.clientY;
@@ -20,7 +20,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10getClientYEVEI)(a0,p)
 //
 // isShiftKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10isShiftKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent10isShiftKeyEVEZ)(a0,p)
 {
     var me = a0._jso0;
     return me.shiftKey;
@@ -29,7 +29,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent10isShiftKeyEVEZ)(a0,p)
 //
 // isAltKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent8isAltKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent8isAltKeyEVEZ)(a0,p)
 {
     var me = a0._jso0;
     return me.altKey;
@@ -38,7 +38,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent8isAltKeyEVEZ)(a0,p)
 //
 // isCtrlKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent9isCtrlKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent9isCtrlKeyEVEZ)(a0,p)
 {
     var me = a0._jso0;
     return me.ctrlKey;
@@ -47,7 +47,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent9isCtrlKeyEVEZ)(a0,p)
 //
 // isMetaKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj10MouseEvent9isMetaKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom10MouseEvent9isMetaKeyEVEZ)(a0,p)
 {
     var me = a0._jso0;
     return me.metaKey;

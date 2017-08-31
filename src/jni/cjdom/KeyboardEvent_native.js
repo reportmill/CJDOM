@@ -3,7 +3,7 @@
 //
 // getKeyCode()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent10getKeyCodeEVEI)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent10getKeyCodeEVEI)(a0,p)
 {
     var ke = a0._jso0;
     return ke.keyCode;
@@ -12,7 +12,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent10getKeyCodeEVEI)(a0,p)
 //
 // isShiftKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent10isShiftKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent10isShiftKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.shiftKey;
@@ -21,7 +21,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent10isShiftKeyEVEZ)(a0,p)
 //
 // isAltKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent8isAltKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent8isAltKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.altKey;
@@ -30,7 +30,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent8isAltKeyEVEZ)(a0,p)
 //
 // isCtrlKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent9isCtrlKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent9isCtrlKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.ctrlKey;
@@ -39,7 +39,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent9isCtrlKeyEVEZ)(a0,p)
 //
 // isMetaKey()
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj13KeyboardEvent9isMetaKeyEVEZ)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent9isMetaKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.metaKey;

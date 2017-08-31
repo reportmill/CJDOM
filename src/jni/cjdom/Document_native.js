@@ -3,7 +3,7 @@
 //
 // Creates an element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj8Document16createElementJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom8Document16createElementJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
 {
     var doc = a0._jso0;
     var name = toJS_String(a1);
@@ -16,7 +16,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj8Document16createElementJSOEN4java4lang6Str
 //
 // Returns the body element.
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj8Document10getBodyJSOEVEN4java4lang6Object)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom8Document10getBodyJSOEVEN4java4lang6Object)(a0,p)
 {
     var doc = a0._jso0;
     return doc.body;
@@ -25,7 +25,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj8Document10getBodyJSOEVEN4java4lang6Object)
 //
 // setColor
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj8Document11setColorJSOEN4java4lang6StringEV)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom8Document11setColorJSOEN4java4lang6StringEV)(a0,a1,p)
 {
     a0._jso0.bgColor = toJS_String(a1);
 }

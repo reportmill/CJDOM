@@ -2,7 +2,7 @@
 //
 // addEventListenerJSO(type,lsnr)
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj11EventTarget19addEventListenerJSOEN4java4lang6StringN7cheerpj13EventListenerEV)(a0,a1,a2,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget19addEventListenerJSOEN4java4lang6StringN5cjdom13EventListenerEV)(a0,a1,a2,p)
 {
     var targ = a0._jso0;
     var type = toJS_String(a1);
@@ -12,7 +12,7 @@ function _CHEERPJ_COMPRESS(ZN7cheerpj11EventTarget19addEventListenerJSOEN4java4l
 //
 // removeEventListenerJSO(type,lsnr)
 //
-function _CHEERPJ_COMPRESS(ZN7cheerpj11EventTarget22removeEventListenerJSOEN4java4lang6StringN7cheerpj13EventListenerEV)(a0,a1,a2,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget22removeEventListenerJSOEN4java4lang6StringN5cjdom13EventListenerEV)(a0,a1,a2,p)
 {
     var targ = a0._jso0;
     var type = toJS_String(a1);
