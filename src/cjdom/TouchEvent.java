@@ -1,12 +1,64 @@
 package cjdom;
 
 /**
- * A custom class.
+ * TouchEvent interface represents an event sent when the state of contacts with a touch-sensitive surface changes.
+ * This surface can be a touch screen or trackpad, for example. The event can describe one or more points of contact
+ * with the screen and includes support for detecting movement, addition and removal of contact points, and so forth.
  */
 public class TouchEvent extends Event {
+    
+    // The array of touches
+    Touch       _touches[];
+    
+    // The array of changed touches
+    Touch       _changedTouches[];
 
-public Touch[] getTouches()  { return null; }
+/**
+ * Returns all Touch objects representing all current points of contact with the surface, regardless of target or
+ * changed status
+ */
+public Touch[] getTouches()
+{
+    if(_touches!=null) return _touches;
+    int tc = getTouchCount();
+    _touches = new Touch[tc];
+    for(int i=0;i<tc;i++) _touches[i] = new Touch();
+    getTouchesJSO();
+    return _touches;
+}
 
-public Touch[] getChangedTouches()  { return null; }
+/**
+ * Returns the number of touches.
+ */
+native int getTouchCount();
+
+/**
+ * Loads touches.
+ */
+native void getTouchesJSO();
+
+/**
+ * Returns the Touch objects representing individual points of contact whose states changed between the previous touch
+ * event and this one
+ */
+public Touch[] getChangedTouches()
+{
+    if(_changedTouches!=null) return _changedTouches;
+    int tc = getChangedTouchCount();
+    _changedTouches = new Touch[tc];
+    for(int i=0;i<tc;i++) _changedTouches[i] = new Touch();
+    getChangedTouchesJSO();
+    return _changedTouches;
+}
+
+/**
+ * Returns the number of changed touches.
+ */
+native int getChangedTouchCount();
+
+/**
+ * Loads changed touches.
+ */
+native void getChangedTouchesJSO();
 
 }

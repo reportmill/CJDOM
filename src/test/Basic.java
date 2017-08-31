@@ -48,15 +48,18 @@ public static void main(String args[])
     rc.drawImage(img,125,125,50,50);
     
     // Add listener
-    //body.addEventListener("mousedown", e -> mouseDown(e));
+    body.addEventListener("touchstart", e -> touchStart((TouchEvent)e));
 
     // Exit
     System.out.println("Basic test done");
 }
 
-static void mouseDown(Object anEvent)
+static void touchStart(TouchEvent anEvent)
 {
-    System.out.println("MouseDown: " + anEvent);
+    System.out.println("touchStart: " + anEvent);
+    anEvent.getTouches();
+    Touch touch = anEvent.getTouches()[0];
+    System.out.println("ClientXY: " + touch.getClientX() + ", " + touch.getClientY());
 }
 
 }
