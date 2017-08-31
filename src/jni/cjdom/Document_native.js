@@ -8,8 +8,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom8Document16createElementJSOEN4java4lang6Strin
     var doc = a0._jso0;
     var name = toJS_String(a1);
     var emt = doc.createElement(name);
-    console.log("Created element " + name);
-    console.log(emt);
+    //console.log("Created element " + name); console.log(emt);
     return emt;
 }
 
