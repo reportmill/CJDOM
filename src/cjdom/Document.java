@@ -24,6 +24,7 @@ public Element createElement(String aName)
         emt = new HTMLImageElement();
     else if(aName.equalsIgnoreCase("canvas"))
         emt = new HTMLCanvasElement();
+    else emt = new HTMLElement();
     
     // Set JSO and return element
     emt._jso = jso;

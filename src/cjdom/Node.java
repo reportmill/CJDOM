@@ -21,7 +21,7 @@ public void appendChild(Node aChild)
  */
 public void removeChild(Node aChild)
 {
-    removeChild(aChild);
+    removeChildJSO(aChild);
 }
 
 /**

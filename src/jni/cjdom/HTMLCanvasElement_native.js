@@ -1,7 +1,7 @@
 
 
 //
-// Returns the width HTML attribute of the <canvas> element.
+// getWidth()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8getWidthEVEI)(a0,p)
 {
@@ -10,7 +10,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8getWidthEVEI)(a0,p)
 }
 
 //
-// Sets the width HTML attribute of the <canvas> element.
+// setWidth(val)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8setWidthEIEV)(a0,a1,p)
 {
@@ -19,7 +19,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement8setWidthEIEV)(a0,a1,p)
 }
 
 //
-// Returns the height HTML attribute of the <canvas> element.
+// getHeight()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9getHeightEVEI)(a0,p)
 {
@@ -28,7 +28,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9getHeightEVEI)(a0,p)
 }
 
 //
-// Sets the height HTML attribute of the <canvas> element.
+// setHeight()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9setHeightEIEV)(a0,a1,p)
 {
@@ -37,7 +37,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement9setHeightEIEV)(a0,a1,p)
 }
 
 //
-// Returns a drawing context on the canvas.
+// getContext(str)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom17HTMLCanvasElement13getContextJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
 {

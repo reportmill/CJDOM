@@ -17,7 +17,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget22removeEventListenerJSOEN4java4
     var targ = a0._jso0;
     var type = toJS_String(a1);
     var lsnr = a2;
-    targ.addEventListener(type, lsnr);
+    //targ.removeEventListener(type, lsnr);
 }
 
 //
