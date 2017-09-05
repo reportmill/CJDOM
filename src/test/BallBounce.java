@@ -242,7 +242,12 @@ public class Ball {
     {
         x = aX; y = aY;
         img = (HTMLImageElement)HTMLDocument.current().createElement("img");
+        
         img.setSrc("http://reportmill.com/cj/BallBounce/Ball.png");
+        //Blob blob = new Blob(getClass().getResourceAsStream("Ball.png"), "image/png");
+        //String url = URL.createObjectURL(blob);
+        //img.setSrc(url);
+        
         img.getStyle().setCSSText("position:absolute;left:" + aX + "px;top:" + aY + "px;");
     }
     
