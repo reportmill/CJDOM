@@ -73,7 +73,7 @@ public native void moveTo(double aX, double aY);
 public native void lineTo(double aX, double aY);
 
 /**
- * Adds a cubic Bézier curve to the path.
+ * Adds a cubic B?zier curve to the path.
  */
 public native void bezierCurveTo(double cp1x, double cp1y, double cp2x, double cp2y, double x, double y);
 
@@ -140,6 +140,33 @@ public native void transform(double a, double b, double c, double d, double e, d
  * Resets the current transform to the identity matrix, and then invokes the transform() method with the same arguments.
  */
 public native void setTransform(double a, double b, double c, double d, double e, double f);
+
+/**
+ * Returns an ImageData object representing the underlying pixel data for the area of the canvas denoted by the
+ * rectangle which starts at (sx, sy) and has an sw width and sh height.
+ */
+public ImageData getImageData(int aX, int aY, int aW, int aH)
+{
+    ImageData idata = new ImageData();
+    idata._jso = getImageDataJSO(aX, aY, aW, aH);
+    return idata;
+}
+
+/**
+ * Returns an ImageData object representing the underlying pixel data for the area of the canvas denoted by the
+ * rectangle which starts at (sx, sy) and has an sw width and sh height.
+ */
+native ImageData getImageDataJSO(int aX, int aY, int aW, int aH);
+
+/**
+ * Sets the image smoothing mode; if disabled, images will not be smoothed if scaled.
+ */
+public native void setImageSmoothingEnabled(boolean aValue);
+
+/**
+ * Sets the quality of image smoothing ("low", "medium" or "high").
+ */
+public native void setImageSmoothingQuality(String aValue);
 
 /**
  * Creates a gradient along the line given by the coordinates represented by the parameters

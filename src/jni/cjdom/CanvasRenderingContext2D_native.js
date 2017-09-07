@@ -244,6 +244,38 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setTransformEDDDD
 }
 
 //
+// getImageDataJSO(x,y,w,h)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D15getImageDataJSOEIIIIEN5cjdom9ImageData)(a0,a1,a2,a3,a4,p)
+{
+    var rc = a0._jso0;
+    var idata = rc.getImageData(a1,a2,a3,a4);
+    return idata;
+}
+
+//
+// setImageSmoothingEnabled(boolean)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D24setImageSmoothingEnabledEZEV)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    rc.imageSmoothingEnabled = a1;
+    rc.mozImageSmoothingEnabled = a1;
+    rc.webkitImageSmoothingEnabled = a1;
+    rc.msImageSmoothingEnabled = a1;
+}
+
+//
+// setImageSmoothingQuality(str)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D24setImageSmoothingQualityEN4java4lang6StringEV)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var qty = toJS_String(a1);
+    rc.imageSmoothingQuality = qty;
+}
+
+//
 // createLinearGradientJSO(x0,y0,x1,y1)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D23createLinearGradientJSOEDDDDEN4java4lang6Object)(a0,a1,a2,a3,a4,a5,a6,a7,a8,p)
