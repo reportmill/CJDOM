@@ -11,6 +11,11 @@ import java.io.InputStream;
 public class Blob extends JSProxy {
 
 /**
+ * Creates a new Blob.
+ */
+protected Blob()  { }
+
+/**
  * Creates a new Blob from given object.
  */
 public Blob(Object anObj, String aType)
@@ -66,5 +71,10 @@ static byte[] getBytes2(InputStream aStream) throws IOException
         bs.write(chunk, 0, len);
     return bs.toByteArray();
 }
+
+/**
+ * Returns a URL string to this blob.
+ */
+public String getURL()  { return URL.createObjectURL(this); }
 
 }

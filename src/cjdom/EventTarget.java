@@ -38,6 +38,7 @@ public void postEvent(String aType, EventListener aLsnr, Object aJSO)
 {
     Event event = createEvent(aType);
     event._jso = aJSO;
+    event._type = aType;
     aLsnr.handleEvent(event);
 }
 
@@ -50,6 +51,8 @@ Event createEvent(String aType)
         case "mousedown": case "mousemove": case "mouseup": return new MouseEvent();
         case "keydown": case "keypress": case "keyup": return new KeyboardEvent();
         case "touchstart": case "touchmove": case "touchend": return new TouchEvent();
+        case "dragstart": case "dragover": case "drag": case "drop": return new DragEvent();
+        case "dragenter": case "dragexit": case "dragleave": case "dragend": return new DragEvent();
         case "wheel": return new WheelEvent();
         default: return new Event();
     }

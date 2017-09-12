@@ -7,6 +7,14 @@ package cjdom;
  * automated notifications of things happening in the rendering model.
  */
 public class Event extends JSProxy {
+    
+    // The event type
+    String       _type;
+
+/**
+ * Returns the event type.
+ */
+public String getType()  { return _type; }
 
 /**
  * Cancels the event (if it is cancelable).
