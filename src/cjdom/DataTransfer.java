@@ -104,6 +104,11 @@ public void setFiles(File ... theFiles)
 }
 
 /**
+ * Sets the image Element element to use for the drag feedback image.
+ */
+public native void setDragImage(Element aImg, double xOffset, double yOffset);
+
+/**
  * Returns an array of DataTransferItem objects representing drag data.
  */
 public DataTransferItem[] getItems()

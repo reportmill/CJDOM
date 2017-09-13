@@ -57,6 +57,18 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer7getFileEIEN5cjdom4File)(a0,a1,
 }
 
 //
+// setDragImage(img,offx,offy)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer12setDragImageEN5cjdom7ElementDDEV)(a0,a1,a2,a3,a4,a5,p)
+{
+    var dt = a0._jso0;
+    var img = a1._jso0;
+    console.log("SetDragImage: " + a2 + ", " + a4);
+    console.log(img);
+    dt.setDragImage(img, a2, a4);
+}
+
+//
 // getItemCount()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer12getItemCountEVEI)(a0,p)
