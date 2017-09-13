@@ -22,8 +22,10 @@ public Touch[] getTouches()
     if(_touches!=null) return _touches;
     int tc = getTouchCount();
     _touches = new Touch[tc];
-    for(int i=0;i<tc;i++) _touches[i] = new Touch();
-    getTouchesJSO();
+    for(int i=0;i<tc;i++) {
+        _touches[i] = new Touch();
+        _touches[i]._jso = getTouch(i);
+    }
     return _touches;
 }
 
@@ -33,9 +35,9 @@ public Touch[] getTouches()
 native int getTouchCount();
 
 /**
- * Loads touches.
+ * Returns individual touch at given index.
  */
-native void getTouchesJSO();
+native Touch getTouch(int anIndex);
 
 /**
  * Returns the Touch objects representing individual points of contact whose states changed between the previous touch
@@ -46,8 +48,10 @@ public Touch[] getChangedTouches()
     if(_changedTouches!=null) return _changedTouches;
     int tc = getChangedTouchCount();
     _changedTouches = new Touch[tc];
-    for(int i=0;i<tc;i++) _changedTouches[i] = new Touch();
-    getChangedTouchesJSO();
+    for(int i=0;i<tc;i++) {
+        _changedTouches[i] = new Touch();
+        _changedTouches[i]._jso = getChangedTouch(i);
+    }
     return _changedTouches;
 }
 
@@ -57,8 +61,8 @@ public Touch[] getChangedTouches()
 native int getChangedTouchCount();
 
 /**
- * Loads changed touches.
+ * Returns individual changed touch at given index.
  */
-native void getChangedTouchesJSO();
+native Touch getChangedTouch(int anIndex);
 
 }
