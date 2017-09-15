@@ -50,6 +50,11 @@ public native int getInnerWidth();
 public native int getInnerHeight();
 
 /**
+ * Returns the ratio of the resolution in physical pixels to the resolution in CSS pixels for the current display device.
+ */
+public native double getDevicePixelRatio();
+
+/**
  * Loads the specified resource into the browsing context (window or tab) with the specified name. If the name doesn't
  * exist, then a new window is opened and the specified resource is loaded into its browsing context
  */

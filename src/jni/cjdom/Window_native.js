@@ -36,6 +36,15 @@ function _CHEERPJ_COMPRESS(ZN5cjdom6Window14getInnerHeightEVEI)(a0,p)
 }
 
 //
+// getDevicePixelRatio()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom6Window19getDevicePixelRatioEVED)(a0,p)
+{
+    var win = a0._jso0;
+    return win.devicePixelRatio;
+}
+
+//
 // open(url,name,features)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom6Window7openJSOEN4java4lang6StringN4java4lang6StringN4java4lang6StringEN4java4lang6Object)(a0,a1,a2,a3,p)
