@@ -1,0 +1,90 @@
+package cjdom;
+
+/**
+ * FileReader lets web applications asynchronously read the contents of files (or raw data buffers) stored on
+ * the user's computer, using File or Blob objects to specify the file or data to read.
+ */
+public class FileReader extends EventTarget {
+
+/**
+ * Creates a new FileReader.
+ */
+public FileReader()
+{
+    _jso = createFileReaderJSO();
+}
+
+/**
+ * Creates a FileReader JSO.
+ */
+native Object createFileReaderJSO();
+
+/**
+ * Starts reading the contents of the specified Blob, once finished, the result attribute contains an ArrayBuffer
+ * representing the file's data.
+ */
+public native void readAsArrayBuffer(Blob aBlob);
+
+/**
+ * Returns the bytes.
+ */
+public byte[] getResult()
+{
+    Object result = getResultJSO();
+    System.out.println("GotResult: " + result);
+    byte bytes[] = (byte[])result;
+    System.out.println("GotResultBytes: " + bytes.length);
+    return bytes;
+}
+
+/**
+ * Returns the result.
+ */
+native Object getResultJSO();
+
+/**
+ * readBytesAndWait
+ */
+synchronized void readBytesAndWait(Blob aBlob)
+{
+    addEventListener("loadend", e -> readBytesNotify());
+    readAsArrayBuffer(aBlob);
+    
+    // Wait until done
+    System.out.println("readBytesAndWait wait");
+    try { wait(); }
+    catch(Exception e) { throw new RuntimeException(e); }
+}
+
+/**
+ * readBytesNotify
+ */
+synchronized void readBytesNotify()
+{
+    System.out.println("readBytesNotify");
+    notify();
+    System.out.println("readBytesNotify done");
+}
+
+/**
+ * Returns the bytes for the Blob.
+ */
+public static byte[] getBytes(Blob aBlob)
+{
+    System.out.println("FileReader.getBytes");
+    
+    // Create FileReader and readBytes
+    FileReader frdr = new FileReader();
+    frdr.readBytesAndWait(aBlob);
+    
+    // Get result
+    Object result = frdr.getResult();
+    System.out.println("Read: " + result);
+    
+    // Get result as bytes
+    byte bytes[] = (byte[])result;
+    System.out.println("Read bytes, len = " + bytes.length);
+    return bytes;
+}
+
+}

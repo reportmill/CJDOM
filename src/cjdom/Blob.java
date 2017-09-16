@@ -9,6 +9,9 @@ import java.io.InputStream;
  * support files on the user's system.
  */
 public class Blob extends JSProxy {
+    
+    // The bytes
+    byte      _bytes[];
 
 /**
  * Creates a new Blob.
@@ -38,6 +41,19 @@ public native int getSize();
  * Returns string indicating MIME type of data contained in Blob. If type is unknown, this string is empty.
  */
 public native String getType();
+
+/**
+ * Returns the bytes for the Blob.
+ */
+public byte[] getBytes()
+{
+    System.out.println("Blob.getBytes");
+    // If already set, just return
+    if(_bytes!=null) return _bytes;
+    
+    // Return bytes
+    return _bytes = FileReader.getBytes(this);
+}
 
 /**
  * Returns bytes for an object (byte array or InputStream).
