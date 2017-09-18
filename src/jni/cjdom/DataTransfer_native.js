@@ -39,6 +39,16 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer7setDataEN4java4lang6StringN4ja
 }
 
 //
+// clearData(type)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer9clearDataEN4java4lang6StringEV)(a0,a1,p)
+{
+    var dt = a0._jso0;
+    var type = a1? toJS_String(a1) : null;
+    dt.clearData(type);
+}
+
+//
 // getFileCount()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer12getFileCountEVEI)(a0,p)

@@ -6,7 +6,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget19addEventListenerJSOEN4java4lan
 {
     var targ = a0._jso0;
     var type = toJS_String(a1);
-    targ.addEventListener(type, (e) => callPostEvent(a0, a1, a2, e));
+    targ.addEventListener(type, function(e) { callPostEvent(a0, a1, a2, e); });
 }
 
 function callPostEvent(a0, a1, a2, e)

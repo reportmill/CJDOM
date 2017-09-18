@@ -72,6 +72,12 @@ native String getDataJSO(String aType);
 public native void setData(String aType, String theData);
 
 /**
+ * Removes the drag operation's drag data for the given type. If data for the given type does not exist, this method
+ * does nothing.
+ */
+public native void clearData(String aType);
+
+/**
  * Returns an array of all the local files available on the data transfer. If the drag operation doesn't involve
  * dragging files, this property is an empty list.
  */

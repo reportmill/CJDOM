@@ -50,7 +50,6 @@ synchronized void readBytesAndWait(Blob aBlob)
     readAsArrayBuffer(aBlob);
     
     // Wait until done
-    System.out.println("readBytesAndWait wait");
     try { wait(); }
     catch(Exception e) { throw new RuntimeException(e); }
 }
@@ -60,7 +59,6 @@ synchronized void readBytesAndWait(Blob aBlob)
  */
 synchronized void readBytesNotify()
 {
-    System.out.println("readBytesNotify");
     notify();
 }
 
@@ -75,7 +73,6 @@ public static byte[] getBytes(Blob aBlob)
     
     // Get result
     byte bytes[] = frdr.getResult();
-    System.out.println("Read bytes, len = " + bytes.length);
     return bytes;
 }
 

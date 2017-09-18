@@ -62,7 +62,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom6Window7openJSOEN4java4lang6StringN4java4lang
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom6Window11setIntervalEN4java4lang8RunnableIEI)(a0,a1,p)
 {
-    return window.setInterval(() => callRun(a0), a1);
+    return window.setInterval(function() { callRun(a0); }, a1);
 }
 
 //
@@ -78,7 +78,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom6Window13clearIntervalEIEV)(a0,p)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom6Window10setTimeoutEN4java4lang8RunnableIEI)(a0,a1,p)
 {
-    return window.setTimeout(() => callRun(a0), a1);
+    return window.setTimeout(function() { callRun(a0); }, a1);
 }
 
 function callRun(a0)
