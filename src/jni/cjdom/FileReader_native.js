@@ -18,12 +18,12 @@ function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader17readAsArrayBufferEN5cjdom4BlobE
 }
 
 //
-// getResult()
+// getResultJSO()
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader12getResultJSOEVEN4java4lang6Object)(a0,p)
 {
     var frdr = a0._jso0;
-    console.log("getResult");
-    console.log(frdr.result);
-    return frdr.result;
+    var abuf = frdr.result;
+    var intArray = new Int8Array(abuf);
+    return intArray;
 }

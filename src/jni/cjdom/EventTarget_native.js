@@ -6,7 +6,25 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget19addEventListenerJSOEN4java4lan
 {
     var targ = a0._jso0;
     var type = toJS_String(a1);
-    targ.addEventListener(type, (e) => cjCall(a0, "postEvent", type, a2, e));
+    targ.addEventListener(type, (e) => callPostEvent(a0, a1, a2, e));
+}
+
+function callPostEvent(a0, a1, a2, e)
+{
+    //var type = toJS_String(a1);
+    //cjCall(a0, "postEvent", type, a2, e);
+
+    // Get thread
+    var callThread = threads[0];
+    if(callThread.state == "BLOCKED_ON_WAIT") {
+        callThread = new CheerpJThread();
+        threads.push(callThread);
+        callThread.state = "READY";
+    }
+
+    // Call static method
+    var meth = "10postEvent2EN4java4lang6StringN5cjdom13EventListenerN4java4lang6ObjectEV";
+    cheerpjRunStaticMethod(callThread, "cjdom/EventTarget", meth, a1, a2, e);
 }
 
 //

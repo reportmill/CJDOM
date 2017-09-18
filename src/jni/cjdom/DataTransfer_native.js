@@ -48,9 +48,9 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer12getFileCountEVEI)(a0,p)
 }
 
 //
-// getFile(index)
+// getFileJSO(index)
 //
-function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer7getFileEIEN5cjdom4File)(a0,a1,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10getFileJSOEIEN4java4lang6Object)(a0,a1,p)
 {
     var dt = a0._jso0;
     return dt.files[a1];
@@ -63,8 +63,6 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer12setDragImageEN5cjdom7ElementD
 {
     var dt = a0._jso0;
     var img = a1._jso0;
-    console.log("SetDragImage: " + a2 + ", " + a4);
-    console.log(img);
     dt.setDragImage(img, a2, a4);
 }
 

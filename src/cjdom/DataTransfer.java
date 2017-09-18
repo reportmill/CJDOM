@@ -80,7 +80,10 @@ public File[] getFiles()
     if(_files!=null) return _files;
     int count = getFileCount();
     _files = new File[count];
-    for(int i=0;i<count;i++) _files[i] = getFile(i);
+    for(int i=0;i<count;i++) {
+        _files[i] = new File();
+        _files[i]._jso = getFileJSO(i);
+    }
     return _files;
 }
 
@@ -92,7 +95,7 @@ native int getFileCount();
 /**
  * Returns an the local files available on the data transfer at given index.
  */
-native File getFile(int anIndex);
+native Object getFileJSO(int anIndex);
 
 /**
  * Sets the files.

@@ -40,19 +40,29 @@ public native int getSize();
 /**
  * Returns string indicating MIME type of data contained in Blob. If type is unknown, this string is empty.
  */
-public native String getType();
+public String getType()
+{
+    Object typeJSO = getTypeJSO();
+    String type = getString(typeJSO);
+    return type;
+}
+
+/**
+ * Returns string indicating MIME type of data contained in Blob. If type is unknown, this string is empty.
+ */
+native Object getTypeJSO();
 
 /**
  * Returns the bytes for the Blob.
  */
 public byte[] getBytes()
 {
-    System.out.println("Blob.getBytes");
     // If already set, just return
     if(_bytes!=null) return _bytes;
     
     // Return bytes
-    return _bytes = FileReader.getBytes(this);
+    _bytes = FileReader.getBytes(this);
+    return _bytes;
 }
 
 /**

@@ -22,9 +22,9 @@ function _CHEERPJ_COMPRESS(ZN5cjdom4Blob7getSizeEVEI)(a0,p)
 }
 
 //
-// getType()
+// getTypeJSO()
 //
-function _CHEERPJ_COMPRESS(ZN5cjdom4Blob7getTypeEVEN4java4lang6String)(a0,p)
+function _CHEERPJ_COMPRESS(ZN5cjdom4Blob10getTypeJSOEVEN4java4lang6Object)(a0,p)
 {
     var blob = a0._jso0;
     return blob.type;

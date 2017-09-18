@@ -31,10 +31,9 @@ public native void readAsArrayBuffer(Blob aBlob);
 public byte[] getResult()
 {
     Object result = getResultJSO();
-    System.out.println("GotResult: " + result);
-    byte bytes[] = (byte[])result;
-    System.out.println("GotResultBytes: " + bytes.length);
-    return bytes;
+    ArrayBuffer ab = new ArrayBuffer();
+    ab._jso = result;
+    return ab.getBytes();
 }
 
 /**
@@ -63,7 +62,6 @@ synchronized void readBytesNotify()
 {
     System.out.println("readBytesNotify");
     notify();
-    System.out.println("readBytesNotify done");
 }
 
 /**
@@ -71,18 +69,12 @@ synchronized void readBytesNotify()
  */
 public static byte[] getBytes(Blob aBlob)
 {
-    System.out.println("FileReader.getBytes");
-    
     // Create FileReader and readBytes
     FileReader frdr = new FileReader();
     frdr.readBytesAndWait(aBlob);
     
     // Get result
-    Object result = frdr.getResult();
-    System.out.println("Read: " + result);
-    
-    // Get result as bytes
-    byte bytes[] = (byte[])result;
+    byte bytes[] = frdr.getResult();
     System.out.println("Read bytes, len = " + bytes.length);
     return bytes;
 }

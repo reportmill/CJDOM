@@ -43,9 +43,20 @@ public void postEvent(String aType, EventListener aLsnr, Object aJSO)
 }
 
 /**
+ * Called from JavaScript to post an event.
+ */
+public static void postEvent2(String aType, EventListener aLsnr, Object aJSO)
+{
+    Event event = createEvent(aType);
+    event._jso = aJSO;
+    event._type = aType;
+    aLsnr.handleEvent(event);
+}
+
+/**
  * Creates an event for given type.
  */
-Event createEvent(String aType)
+static Event createEvent(String aType)
 {
     switch(aType) {
         case "mousedown": case "mousemove": case "mouseup": return new MouseEvent();
