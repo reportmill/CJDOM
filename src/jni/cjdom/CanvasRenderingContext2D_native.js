@@ -49,7 +49,6 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setLineWidthEDEV)
     rc.lineWidth = a1;
 }
 
-
 //
 // getLineDashJSO()
 //
@@ -312,6 +311,45 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D24setImageSmoothing
     var rc = a0._jso0;
     var qty = toJS_String(a1);
     rc.imageSmoothingQuality = qty;
+}
+
+//
+// getFilterJSO()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12getFilterJSOEVEN4java4lang6Object)(a0,p)
+{
+    var rc = a0._jso0;
+    return rc.filter;
+}
+
+//
+// setFilter(string)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D9setFilterEN4java4lang6StringEN4java4lang6String)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var filter = toJS_String(a1);
+    if(rc.filter)
+        rc.filter = filter;
+}
+
+//
+// getGlobalCompositeOperationJSO()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D30getGlobalCompositeOperationJSOEVEN4java4lang6Object)(a0,p)
+{
+    var rc = a0._jso0;
+    return rc.globalCompositeOperation;
+}
+
+//
+// setGlobalCompositeOperation(string)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D27setGlobalCompositeOperationEN4java4lang6StringEN4java4lang6String)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var type = toJS_String(a1);
+    rc.globalCompositeOperation = type;
 }
 
 //

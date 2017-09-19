@@ -208,6 +208,36 @@ public native void setImageSmoothingEnabled(boolean aValue);
 public native void setImageSmoothingQuality(String aValue);
 
 /**
+ * Returns the filter.
+ */
+public String getFilter()  { return getString(getFilterJSO()); }
+
+/**
+ * Returns the filter.
+ */
+native Object getFilterJSO();
+
+/**
+ * Returns the filter.
+ */
+public native String setFilter(String aFilter);
+
+/**
+ * Returns the type of compositing operation to apply when drawing new shapes.
+ */
+public String getGlobalCompositeOperation()  { return getString(getGlobalCompositeOperationJSO()); }
+
+/**
+ * Returns the type of compositing operation to apply when drawing new shapes.
+ */
+native Object getGlobalCompositeOperationJSO();
+
+/**
+ * Sets the type of compositing operation to apply when drawing new shapes.
+ */
+public native String setGlobalCompositeOperation(String aType);
+
+/**
  * Creates a gradient along the line given by the coordinates represented by the parameters
  */
 public CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1)
