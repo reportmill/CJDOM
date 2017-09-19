@@ -49,6 +49,45 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setLineWidthEDEV)
     rc.lineWidth = a1;
 }
 
+
+//
+// getLineDashJSO()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14getLineDashJSOEVEN4java4lang6Object)(a0,p)
+{
+    var rc = a0._jso0;
+    var ary = rc.getLineDash().unshift(68); // Add 'd' to beginning of array
+    return Float64Array.from(ary);
+}
+
+//
+// setLineDashJSO()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setLineDashJSOEADEV)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var ary = a1!=null? [].slice.call(a1.slice(1)) : [];
+    rc.setLineDash(ary);
+}
+
+//
+// getLineDashOffset()
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D17getLineDashOffsetEVED)(a0,p)
+{
+    var rc = a0._jso0;
+    return rc.lineDashOffset;
+}
+
+//
+// setLineDashOffset(double)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D17setLineDashOffsetEDEV)(a0,a1,a2,p)
+{
+    var rc = a0._jso0;
+    rc.lineDashOffset = a1;
+}
+
 //
 // setGlobalAlpha(value)
 //

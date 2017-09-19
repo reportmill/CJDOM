@@ -32,6 +32,45 @@ public native void setStrokeStyle(CanvasGradient aCG);
 public native void setLineWidth(double aValue);
 
 /**
+ * Returns the current line dash pattern array containing an even number of non-negative numbers.
+ */
+public double[] getLineDash()
+{
+    Object dashArrayJSO = getLineDashJSO();
+    if(dashArrayJSO instanceof double[])
+        return (double[])dashArrayJSO;
+    System.out.println("getLineDash is broken - not returning double[]"); return new double[0];
+}
+
+/**
+ * Returns the current line dash pattern array containing an even number of non-negative numbers.
+ */
+native Object getLineDashJSO();
+
+/**
+ * Sets the current line dash pattern array containing an even number of non-negative numbers.
+ */
+public void setLineDash(double theDashes[])
+{
+    setLineDashJSO(theDashes);
+}
+
+/**
+ * Returns the current line dash pattern array containing an even number of non-negative numbers.
+ */
+native void setLineDashJSO(double theDashes[]);
+
+/**
+ * Returns where to start a dash array on a line.
+ */
+public native double getLineDashOffset();
+
+/**
+ * Sets where to start a dash array on a line.
+ */
+public native void setLineDashOffset(double anOffset);
+
+/**
  * Sets the Alpha value applied to shapes and images before they are composited onto the canvas. Default 1.0 (opaque).
  */
 public native void setGlobalAlpha(double aValue);
