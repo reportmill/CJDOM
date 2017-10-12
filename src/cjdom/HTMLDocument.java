@@ -23,5 +23,10 @@ public HTMLBodyElement getBody()
     return body instanceof HTMLBodyElement? (HTMLBodyElement)body : null;
 }
 
+/**
+ * Allows one to run commands to manipulate the contents of the editable region.
+ */
+public native void execCommand(String aCommandName);
+
 
 }

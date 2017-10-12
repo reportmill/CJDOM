@@ -31,12 +31,7 @@ native Object getDataTransferJSO();
  */
 public String toString()
 {
-    StringBuilder sb = new StringBuilder("DragEvent { ");
-    DataTransfer dt = getDataTransfer();
-    DataTransferItem dtis[] = dt.getItems(), dti = dtis.length>0? dtis[0] : null;
-    sb.append("kind=").append(dti!=null? dti.getKind() : null);
-    sb.append(", type=").append(dti!=null? dti.getType() : null);
-    sb.append(" }");
+    StringBuilder sb = new StringBuilder("DragEvent { ").append(getDataTransfer()).append(" }");
     return sb.toString();
 }
 

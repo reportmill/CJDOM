@@ -32,6 +32,11 @@ public void removeEventListener(String aType, EventListener aLsnr)
 native void removeEventListenerJSO(String aType, EventListener aLsnr);
 
 /**
+ * Dispatches an Event at the specified EventTarget, invoking the affected EventListeners in the appropriate order.
+ */
+public native void dispatchEvent(Event anEvent);
+
+/**
  * Called from JavaScript to post an event.
  */
 public void postEvent(String aType, EventListener aLsnr, Object aJSO)
@@ -62,6 +67,7 @@ static Event createEvent(String aType)
         case "mousedown": case "mousemove": case "mouseup": return new MouseEvent();
         case "keydown": case "keypress": case "keyup": return new KeyboardEvent();
         case "touchstart": case "touchmove": case "touchend": return new TouchEvent();
+        case "cut": case "copy": case "paste": return new ClipboardEvent();
         case "dragstart": case "dragover": case "drag": case "drop": return new DragEvent();
         case "dragenter": case "dragexit": case "dragleave": case "dragend": return new DragEvent();
         case "wheel": return new WheelEvent();

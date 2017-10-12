@@ -39,14 +39,21 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget22removeEventListenerJSOEN4java4
 }
 
 //
+// dispatchEvent(event)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget13dispatchEventEN5cjdom5EventEV)(a0,a1,p)
+{
+    var targ = a0._jso0;
+    var event = a1._jso0;
+    targ.dispatchEvent(event);
+}
+
+//
 // Java String to JS
 //
 function toJS_String(aStr)
 {
     var len = aStr.value0.length;
-    var str = "";
-    for(i=1;i<len;i++) {
-        str += String.fromCharCode(aStr.value0[i]);
-    }
+    var str = ""; for(i=1;i<len;i++) { str += String.fromCharCode(aStr.value0[i]); }
     return str;
 }

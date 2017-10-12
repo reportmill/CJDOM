@@ -69,7 +69,16 @@ native String getDataJSO(String aType);
  * in the types list will be the new format. If data for the type already exists, the existing data is replaced in the
  * same position.
  */
-public native void setData(String aType, String theData);
+public void setData(String aType, String theData)
+{
+    setDataJSO(aType, theData);
+    _types = null; _items = null; _files = null;
+}
+
+/**
+ * Set the data for a given type.
+ */
+native void setDataJSO(String aType, String theData);
 
 /**
  * Removes the drag operation's drag data for the given type. If data for the given type does not exist, this method
@@ -141,5 +150,18 @@ native int getItemCount();
  * Returns the DataTransferItem JSO at index.
  */
 native Object getItemJSO(int anIndex);
+
+/**
+ * Standard toString implementation.
+ */
+public String toString()
+{
+    StringBuilder sb = new StringBuilder("DataTransfer { Types:[");
+    String types[] = getTypes();
+    for(String type : types) {
+        if(type!=types[0]) sb.append(", "); sb.append(type); }
+    sb.append(" ] }");
+    return sb.toString();
+}
 
 }
