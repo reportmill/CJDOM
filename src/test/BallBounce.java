@@ -32,7 +32,6 @@ public BallBounce()
     // Get document and body
     HTMLDocument doc = HTMLDocument.current();
     HTMLBodyElement body = doc.getBody();
-    body.getStyle().setCSSText("margin:0;");
 
     // Get main element and register mouse listeners
     _mainEmt = body;
@@ -59,6 +58,7 @@ public BallBounce()
     
     // Seed some starter balls
     for(int i=0;i<8;i++) addBall(30,30);
+    body.getStyle().setCSSText("margin:0;");
 }
 
 /**
@@ -243,10 +243,9 @@ public class Ball {
         x = aX; y = aY;
         img = (HTMLImageElement)HTMLDocument.current().createElement("img");
         
-        img.setSrc("http://reportmill.com/cj/BallBounce/Ball.png");
+        img.setSrc("http://reportmill.com/cj/PlayBall/Ball.png");
         //Blob blob = new Blob(getClass().getResourceAsStream("Ball.png"), "image/png");
-        //String url = URL.createObjectURL(blob);
-        //img.setSrc(url);
+        //String url = URL.createObjectURL(blob); img.setSrc(url);
         
         img.getStyle().setCSSText("position:absolute;left:" + aX + "px;top:" + aY + "px;");
     }
