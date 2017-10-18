@@ -216,6 +216,16 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D8fillTextEN4java4la
 }
 
 //
+// measureTextJSO(str)
+//
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14measureTextJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var str = toJS_String(a1);
+    return rc.measureText(str,a2,a4);
+}
+
+//
 // drawImage(img-src,x,y)
 //
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D9drawImageEN5cjdom17CanvasImageSourceDDEV)(a0,a1,a2,a3,a4,a5,p)

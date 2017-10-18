@@ -145,6 +145,21 @@ public native void clip();
 public native void fillText(String aStr, double aX, double aY);
 
 /**
+ * Returns a TextMetrics object that contains information about the measured text
+ */
+public TextMetrics measureText(String aStr)
+{
+    TextMetrics tm = new TextMetrics();
+    tm._jso = measureTextJSO(aStr);
+    return tm;
+}
+
+/**
+ * Returns a TextMetrics object that contains information about the measured text
+ */
+native Object measureTextJSO(String aStr);
+
+/**
  * Draws the specified image at the given (x,y) position.
  */
 public native void drawImage(CanvasImageSource aImg, double aX, double aY);
