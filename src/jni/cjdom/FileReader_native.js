@@ -1,15 +1,11 @@
 
-//
-// createFileReaderJSO
-//
+/* createFileReaderJSO */
 function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader19createFileReaderJSOEVEN4java4lang6Object)(a0,p)
 {
     return new FileReader();
 }
 
-//
-// readAsArrayBuffer(Blob)
-//
+/* readAsArrayBuffer(Blob) */
 function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader17readAsArrayBufferEN5cjdom4BlobEV)(a0,a1,p)
 {
     var frdr = a0._jso0;
@@ -17,9 +13,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader17readAsArrayBufferEN5cjdom4BlobE
     frdr.readAsArrayBuffer(blob);
 }
 
-//
-// getResultJSO()
-//
+/* getResultJSO() */
 function _CHEERPJ_COMPRESS(ZN5cjdom10FileReader12getResultJSOEVEN4java4lang6Object)(a0,p)
 {
     var frdr = a0._jso0;

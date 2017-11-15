@@ -1,7 +1,5 @@
 
-//
-// addEventListenerJSO(type,lsnr)
-//
+/* addEventListenerJSO(type,lsnr) */
 function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget19addEventListenerJSOEN4java4lang6StringN5cjdom13EventListenerEV)(a0,a1,a2,p)
 {
     var targ = a0._jso0;
@@ -11,10 +9,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget19addEventListenerJSOEN4java4lan
 
 function callPostEvent(a0, a1, a2, e)
 {
-    //var type = toJS_String(a1);
-    //cjCall(a0, "postEvent", type, a2, e);
-
-    // Get thread
+    /* Get thread */
     var callThread = threads[0];
     if(callThread.state == "BLOCKED_ON_WAIT") {
         callThread = new CheerpJThread();
@@ -22,25 +17,21 @@ function callPostEvent(a0, a1, a2, e)
         callThread.state = "READY";
     }
 
-    // Call static method
+    /* Call static method */
     var meth = "10postEvent2EN4java4lang6StringN5cjdom13EventListenerN4java4lang6ObjectEV";
     cheerpjRunStaticMethod(callThread, "cjdom/EventTarget", meth, a1, a2, e);
 }
 
-//
-// removeEventListenerJSO(type,lsnr)
-//
+/* removeEventListenerJSO(type,lsnr) */
 function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget22removeEventListenerJSOEN4java4lang6StringN5cjdom13EventListenerEV)(a0,a1,a2,p)
 {
     var targ = a0._jso0;
     var type = toJS_String(a1);
     var lsnr = a2;
-    //targ.removeEventListener(type, lsnr);
+    /* targ.removeEventListener(type, lsnr); */
 }
 
-//
-// dispatchEvent(event)
-//
+/* dispatchEvent(event) */
 function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget13dispatchEventEN5cjdom5EventEV)(a0,a1,p)
 {
     var targ = a0._jso0;
@@ -48,9 +39,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom11EventTarget13dispatchEventEN5cjdom5EventEV)
     targ.dispatchEvent(event);
 }
 
-//
-// Java String to JS
-//
+/* Java String to JS */
 function toJS_String(aStr)
 {
     var len = aStr.value0.length;

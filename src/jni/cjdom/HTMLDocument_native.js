@@ -1,7 +1,5 @@
 
-//
-// execCommand(cname)
-//
+/* execCommand(cname) */
 function _CHEERPJ_COMPRESS(ZN5cjdom12HTMLDocument11execCommandEN4java4lang6StringEV)(a0,a1,p)
 {
     var doc = a0._jso0;
@@ -10,9 +8,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12HTMLDocument11execCommandEN4java4lang6Strin
     if(!worked) console.log("HTMLDocument.execCommand: Failed for command: " + cname);
 }
 
-//
-// Java String to JS
-//
+/* Java String to JS */
 function toJS_String(aStr)
 {
     var len = aStr.value0.length;

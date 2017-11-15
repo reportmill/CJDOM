@@ -1,35 +1,27 @@
 
 
-//
-// getDeltaX()
-//
+/* getDeltaX() */
 function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaXEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaX;
 }
 
-//
-// getDeltaY()
-//
+/* getDeltaY() */
 function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaYEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaY;
 }
 
-//
-// getDeltaZ()
-//
+/* getDeltaZ() */
 function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent9getDeltaZEVED)(a0,p)
 {
     var we = a0._jso0;
     return we.deltaZ;
 }
 
-//
-// getDeltaMode()
-//
+/* getDeltaMode() */
 function _CHEERPJ_COMPRESS(ZN5cjdom10WheelEvent12getDeltaModeEVEI)(a0,p)
 {
     var we = a0._jso0;

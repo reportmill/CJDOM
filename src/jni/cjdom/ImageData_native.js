@@ -1,7 +1,5 @@
 
-//
-// getData(index)
-//
+/* getData(index) */
 function _CHEERPJ_COMPRESS(ZN5cjdom9ImageData7getDataEIEB)(a0,a1,p)
 {
     var idata = a0._jso0;
@@ -9,9 +7,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom9ImageData7getDataEIEB)(a0,a1,p)
     return data[a1];
 }
 
-//
-// getDataInt(index)
-//
+/* getDataInt(index) */
 function _CHEERPJ_COMPRESS(ZN5cjdom9ImageData10getDataIntEIEI)(a0,a1,p)
 {
     var idata = a0._jso0;

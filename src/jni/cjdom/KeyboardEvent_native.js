@@ -1,44 +1,34 @@
 
 
-//
-// getKeyCode()
-//
+/* getKeyCode() */
 function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent10getKeyCodeEVEI)(a0,p)
 {
     var ke = a0._jso0;
     return ke.keyCode;
 }
 
-//
-// isShiftKey()
-//
+/* isShiftKey() */
 function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent10isShiftKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.shiftKey;
 }
 
-//
-// isAltKey()
-//
+/* isAltKey() */
 function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent8isAltKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.altKey;
 }
 
-//
-// isCtrlKey()
-//
+/* isCtrlKey() */
 function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent9isCtrlKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
     return ke.ctrlKey;
 }
 
-//
-// isMetaKey()
-//
+/* isMetaKey() */
 function _CHEERPJ_COMPRESS(ZN5cjdom13KeyboardEvent9isMetaKeyEVEZ)(a0,p)
 {
     var ke = a0._jso0;
