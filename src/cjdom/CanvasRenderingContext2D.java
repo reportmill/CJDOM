@@ -223,6 +223,16 @@ public native void setImageSmoothingEnabled(boolean aValue);
 public native void setImageSmoothingQuality(String aValue);
 
 /**
+ * Sets the ShadowBlur.
+ */
+public native void setShadowBlur(double aValue);
+
+/**
+ * Sets the ShadowColor.
+ */
+public native void setShadowColor(String aValue);
+
+/**
  * Returns the filter.
  */
 public String getFilter()  { return getString(getFilterJSO()); }

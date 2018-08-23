@@ -294,6 +294,21 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D23createLinearGradi
     return cg;
 }
 
+/* setShadowBlur(double) */
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D13setShadowBlurEDEV)(a0,a1,a2,p)
+{
+    var rc = a0._jso0;
+    rc.shadowBlur = a1;
+}
+
+/* setShadowColor(string) */
+function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setShadowColorEN4java4lang6StringEV)(a0,a1,p)
+{
+    var rc = a0._jso0;
+    var color = toJS_String(a1);
+    rc.shadowColor = color;
+}
+
 /* Java String to JS */
 function toJS_String(aStr)
 {
