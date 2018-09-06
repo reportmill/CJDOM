@@ -39,18 +39,7 @@ public native void dispatchEvent(Event anEvent);
 /**
  * Called from JavaScript to post an event.
  */
-public void postEvent(String aType, EventListener aLsnr, Object aJSO)
-{
-    Event event = createEvent(aType);
-    event._jso = aJSO;
-    event._type = aType;
-    aLsnr.handleEvent(event);
-}
-
-/**
- * Called from JavaScript to post an event.
- */
-public static void postEvent2(String aType, EventListener aLsnr, Object aJSO)
+public static void postEvent(String aType, EventListener aLsnr, Object aJSO)
 {
     Event event = createEvent(aType);
     event._jso = aJSO;

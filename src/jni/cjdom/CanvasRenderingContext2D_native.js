@@ -4,7 +4,7 @@
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setFillStyleEN4java4lang6StringEV)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var fs = toJS_String(a1);
+    var fs = cjStringJavaToJs(a1);
     rc.fillStyle = fs;
 }
 
@@ -20,7 +20,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12setFillStyleEN5cj
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setStrokeStyleEN4java4lang6StringEV)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var fs = toJS_String(a1);
+    var fs = cjStringJavaToJs(a1);
     rc.strokeStyle = fs;
 }
 
@@ -80,7 +80,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setGlobalAlphaEDE
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D7setFontEN4java4lang6StringEV)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var str = toJS_String(a1);
+    var str = cjStringJavaToJs(a1);
     rc.font = str;
 }
 
@@ -165,7 +165,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D4clipEVEV)(a0,p)
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D8fillTextEN4java4lang6StringDDEV)(a0,a1,a2,a3,a4,a5,p)
 {
     var rc = a0._jso0;
-    var str = toJS_String(a1);
+    var str = cjStringJavaToJs(a1);
     rc.fillText(str,a2,a4);
 }
 
@@ -173,7 +173,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D8fillTextEN4java4la
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14measureTextJSOEN4java4lang6StringEN4java4lang6Object)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var str = toJS_String(a1);
+    var str = cjStringJavaToJs(a1);
     return rc.measureText(str,a2,a4);
 }
 
@@ -251,7 +251,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D24setImageSmoothing
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D24setImageSmoothingQualityEN4java4lang6StringEV)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var qty = toJS_String(a1);
+    var qty = cjStringJavaToJs(a1);
     rc.imageSmoothingQuality = qty;
 }
 
@@ -266,7 +266,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D12getFilterJSOEVEN4
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D9setFilterEN4java4lang6StringEN4java4lang6String)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var filter = toJS_String(a1);
+    var filter = cjStringJavaToJs(a1);
     if(rc.filter)
         rc.filter = filter;
 }
@@ -282,7 +282,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D30getGlobalComposit
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D27setGlobalCompositeOperationEN4java4lang6StringEN4java4lang6String)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var type = toJS_String(a1);
+    var type = cjStringJavaToJs(a1);
     rc.globalCompositeOperation = type;
 }
 
@@ -305,14 +305,6 @@ function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D13setShadowBlurEDEV
 function _CHEERPJ_COMPRESS(ZN5cjdom24CanvasRenderingContext2D14setShadowColorEN4java4lang6StringEV)(a0,a1,p)
 {
     var rc = a0._jso0;
-    var color = toJS_String(a1);
+    var color = cjStringJavaToJs(a1);
     rc.shadowColor = color;
-}
-
-/* Java String to JS */
-function toJS_String(aStr)
-{
-    var len = aStr.value0.length;
-    var str = ""; for(i=1;i<len;i++) { str += String.fromCharCode(aStr.value0[i]); }
-    return str;
 }

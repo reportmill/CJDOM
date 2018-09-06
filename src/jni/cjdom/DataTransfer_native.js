@@ -17,7 +17,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer7getTypeEIEN4java4lang6Object)(
 function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10getDataJSOEN4java4lang6StringEN4java4lang6String)(a0,a1,p)
 {
     var dt = a0._jso0;
-    var type = toJS_String(a1);
+    var type = cjStringJavaToJs(a1);
     return dt.getData(type);
 }
 
@@ -25,8 +25,8 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10getDataJSOEN4java4lang6String
 function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10setDataJSOEN4java4lang6StringN4java4lang6StringEV)(a0,a1,a2,p)
 {
     var dt = a0._jso0;
-    var type = toJS_String(a1);
-    var data = toJS_String(a2);
+    var type = cjStringJavaToJs(a1);
+    var data = cjStringJavaToJs(a2);
     dt.setData(type, data);
 }
 
@@ -34,7 +34,7 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10setDataJSOEN4java4lang6String
 function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer9clearDataEN4java4lang6StringEV)(a0,a1,p)
 {
     var dt = a0._jso0;
-    var type = a1? toJS_String(a1) : null;
+    var type = a1? cjStringJavaToJs(a1) : null;
     dt.clearData(type);
 }
 
@@ -72,12 +72,4 @@ function _CHEERPJ_COMPRESS(ZN5cjdom12DataTransfer10getItemJSOEIEN4java4lang6Obje
 {
     var dt = a0._jso0;
     return dt.items[a1];
-}
-
-/* Java String to JS */
-function toJS_String(aStr)
-{
-    var len = aStr.value0.length;
-    var str = ""; for(i=1;i<len;i++) { str += String.fromCharCode(aStr.value0[i]); }
-    return str;
 }
